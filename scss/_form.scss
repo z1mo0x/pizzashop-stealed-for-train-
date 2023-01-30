@@ -1,0 +1,65 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: stretch;
+
+    &__title {
+        font-size: 40px;
+        font-weight: 500;
+        font-style: italic;
+        color: #777777;
+        margin-top: 100px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    &__subtitle {
+        font-size: 40px;
+        color: #434343;
+        letter-spacing: 2px;
+    }
+
+    &__desrc {
+        font-size: 20px;
+        font-weight: 300;
+        margin-top: 20px;
+    }
+
+    &__label {
+        margin-top: 30px;
+        font-weight: 300;
+        font-size: 18px;
+    }
+
+    &__element {
+        margin-top: 30px;
+        height: 30px;
+        border: none;
+        border-bottom: 1px solid #777777;
+        padding-left: 15px;
+        padding-bottom: 15px;
+        font-size: 14px;
+        font-weight: 300;
+
+        &:focus {
+            outline: none;
+            transition: all .5s;
+
+        }
+
+        &::placeholder {
+            transition: all .5s;
+
+        }
+
+        &:focus::placeholder {
+            opacity: 0;
+            transition: all .5s;
+        }
+    }
+
+    &__button {
+        margin-top: 50px;
+        width: 200px;
+    }
+}
