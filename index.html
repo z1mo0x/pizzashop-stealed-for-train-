@@ -34,7 +34,6 @@
         </ul>
     </nav>
     <section class="promo">
-        <!-- <div class="promo__noise"></div> -->
         <div class="promo__background">
             <div class="container">
                 <div class="promo__title">
@@ -48,7 +47,7 @@
                     <li>Доставка курьером на дом</li>
                     <li>Приятные цены</li>
                 </ul>
-                <button class="promo__btn button">Перейти в каталог</button>
+                <a href="#pizza"><button class="promo__btn button">Перейти в каталог</button></a>
             </div>
         </div>
     </section>
@@ -68,7 +67,7 @@
                     <li>Популярные</li>
                 </a>
                 <hr>
-                <a href="">
+                <a href="#pizza">
                     <li>Пицца на тонком тесте</li>
                 </a>
                 <hr>
@@ -113,7 +112,7 @@
         </div>
     </section>
     <section class="wide">
-        <div class="title">Вкусная пицца</div>
+        <div class="title" id="pizza">Вкусная пицца</div>
         <div class="subtitle">НА ТОНКОМ ТЕСТЕ</div>
         <div class="descr">В нашей пиццерии любой желающий найдет пиццу по вкусу</div>
         <div class="wide__cards">
@@ -230,7 +229,9 @@
             <div class="difference__title">Разнообразие вкусов</div>
             <div class="difference__subtitle">В ассортименте нашей пиццерии любой желающий сможет найти пиццу, которая
                 обязательно придется ему по душе</div>
-            <div class="difference__button button">Перейти в каталог</div>
+            <a href="#pizza">
+                <div class="difference__button button">Перейти в каталог</div>
+            </a>
         </div>
         <div class="about__delivery delivery">
             <div class="delivery__man"><img src="img/myshic.jpg" alt=""></div>
@@ -360,6 +361,29 @@
             </div>
         </div>
     </footer>
+    <div class="overlay">
+        <div class="popup">
+            <form action="#" class="popup__form form">
+                <div class="popup__close"></div>
+                <div class="popup__title">Оставить заявку</div>
+                <label for="name" class="popup__label">Введите имя</label>
+                <input type="text" class="popup__element" name="name" placeholder="Введите имя">
+                <label for="E-mail" class="popup__label">Введите E-mail</label>
+                <input type="email" class="popup__element" name="E-mail" placeholder="mail@mail.ru">
+                <label for="phone" class="popup__label">Введите имя</label>
+                <input type="tel" class="popup__element" name="phone" placeholder="x-xxx-xxx-xx-xx">
+                <button class="popup__button button">Отправить</button>
+                <div class="popup__confirm">Нажимая на кнопку, Вы принимаете <a href="">Положение </a> и <a
+                        href="">Согласие</a>
+                    на обработку персональных данных.</div>
+            </form>
+        </div>
+    </div>
+
+
+
+    <script src="js/main.js"></script>
+    <script src="js/popup.js"></script>
 </body>
 
 </html>

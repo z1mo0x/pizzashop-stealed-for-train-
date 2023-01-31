@@ -1,5 +1,6 @@
 @import'button';
 @import'form';
+@import 'popup';
 
 .container {
     width: 100%;
@@ -13,6 +14,13 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+}
+
+html,
+body {
+    scroll-behavior: smooth !important;
+    position: relative;
 }
 
 .header {
@@ -298,12 +306,27 @@
         flex-wrap: wrap;
     }
 
+    &__card {
+
+        &:hover {
+            background: #d9d9d9;
+            transition: all .5s;
+        }
+    }
+
     margin: 0 300px;
 }
 
 .card {
     flex: 20%;
     align-items: center;
+    transition: all .5s;
+    padding-top: 20px;
+    margin-left: 10px;
+
+    &:first {
+        margin-left: 0;
+    }
 
     &__img {}
 
