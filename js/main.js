@@ -10,6 +10,5 @@ anchors.forEach((element) => {
         let top = element.getBoundingClientRect();
         let scrollPosition = top.top + window.scrollY
         let animateDuration = 1500;
-        window.scrollY(scrollPosition)
     })
 });

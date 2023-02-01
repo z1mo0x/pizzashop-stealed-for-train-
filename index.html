@@ -117,39 +117,39 @@
         <div class="descr">В нашей пиццерии любой желающий найдет пиццу по вкусу</div>
         <div class="wide__cards">
             <div class="wide__card card">
-                <div class="card__img"><img src="img/p2.jpg" alt=""></div>
+                <div class="card__img"><img src="img/pizza1.jpg" alt=""></div>
                 <div class="card__title">
-                    Пицца на пышном тесте</div>
+                    Мясная пицца</div>
                 <div class="card__descr">В данном поле вы можете написать краткое описание товара, состоящее из 2-3
                     предложений или оформить в виде маркированного списка.</div>
                 <div class="card__price">349 руб.</div>
                 <div class="card__button button button__popular">Заказать</div>
             </div>
             <div class="wide__card card">
-                <div class="card__img"><img src="img/p2.jpg" alt=""></div>
+                <div class="card__img"><img src="img/pizza2.jpg" alt=""></div>
                 <div class="card__title">
-                    Пицца на пышном тесте</div>
+                    Пицца Диабло</div>
                 <div class="card__descr">В данном поле вы можете написать краткое описание товара, состоящее из 2-3
                     предложений или оформить в виде маркированного списка.</div>
-                <div class="card__price">349 руб.</div>
+                <div class="card__price">149 руб.</div>
                 <div class="card__button button button__popular">Заказать</div>
             </div>
             <div class="wide__card card">
-                <div class="card__img"><img src="img/p2.jpg" alt=""></div>
+                <div class="card__img"><img src="img/pizza3.jpg" alt=""></div>
                 <div class="card__title">
-                    Пицца на пышном тесте</div>
+                    Пицца Суприм</div>
                 <div class="card__descr">В данном поле вы можете написать краткое описание товара, состоящее из 2-3
                     предложений или оформить в виде маркированного списка.</div>
-                <div class="card__price">349 руб.</div>
+                <div class="card__price">249 руб.</div>
                 <div class="card__button button button__popular">Заказать</div>
             </div>
             <div class="wide__card card">
-                <div class="card__img"><img src="img/p2.jpg" alt=""></div>
+                <div class="card__img"><img src="img/pizza4.jpg" alt=""></div>
                 <div class="card__title">
-                    Пицца на пышном тесте</div>
+                    Пицца Жульен</div>
                 <div class="card__descr">В данном поле вы можете написать краткое описание товара, состоящее из 2-3
                     предложений или оформить в виде маркированного списка.</div>
-                <div class="card__price">349 руб.</div>
+                <div class="card__price">49 руб.</div>
                 <div class="card__button button button__popular">Заказать</div>
             </div>
         </div>
@@ -221,7 +221,7 @@
                 <div class="textside__title">Свежая продукция</div>
                 <div class="textside__subtitle">Для изготовления вкусных пицц наши повара используют только самые свежие
                     продукты</div>
-                <button class="textside__button button">Заказать</button>
+                <button class="textside__button button" data-feedback-form="1">Заказать</button>
             </div>
             <div class="about__imageside"><img src="img/fresh.jpg" alt=""></div>
         </div>
@@ -240,7 +240,7 @@
                     <div class="delivery__title">Доставка и оплата</div>
                     <div class="delivery__subtitle">Вы можете купить пиццу прямо в пиццерии или заказать ее на сайте, не
                         выходя из дома</div>
-                    <div class="delivery__button button">Написать нам</div>
+                    <div class="delivery__button button" data-feedback-form="1">Написать нам</div>
                 </div>
                 <div class="delivery__pizza"><img src="img/dostavka.jpg" alt=""></div>
             </div>
@@ -376,6 +376,44 @@
                 <div class="popup__confirm">Нажимая на кнопку, Вы принимаете <a href="">Положение </a> и <a
                         href="">Согласие</a>
                     на обработку персональных данных.</div>
+            </form>
+        </div>
+        <div class="popup popup-feedback">
+            <form action="#" class="popup__form form">
+                <div class="popup__close"></div>
+                <div class="popup__title">Оставить заявку</div>
+                <label for="name" class="popup__label">Введите имя</label>
+                <input type="text" class="popup__element" name="name" placeholder="Введите имя">
+                <label for="E-mail" class="popup__label">Введите E-mail</label>
+                <input type="email" class="popup__element" name="E-mail" placeholder="mail@mail.ru">
+                <label for="phone" class="popup__label">Введите имя</label>
+                <input type="tel" class="popup__element" name="phone" placeholder="x-xxx-xxx-xx-xx">
+                <button class="popup__button button">Отправить</button>
+                <div class="popup__confirm">Нажимая на кнопку, Вы принимаете <a href="">Положение </a> и <a
+                        href="">Согласие</a>
+                    на обработку персональных данных.</div>
+            </form>
+        </div>
+        <div class="popup__pizza">
+            <img class="popup__pizza_img" src="img/pizza3.jpg" alt="">
+            <div class="popup__close"></div>
+            <form action="" class="popup__pizza_form">
+                <div class="popup__pizza_title">Пицца на тонком тесте</div>
+                <div class="popup__pizza_subtitle">Название товара</div>
+                <div class="popup__pizza_descr">Подробное описание продукта.
+                    Здесь вы можете расписать:</d>
+                    <ul class="popup__pizza_list">
+                        <li>свойства товара,</li>
+                        <li>параметры товара,</li>
+                        <li>описание товара,</li>
+                        <li>наличие на складе,</li>
+                        <li>цвет,</li>
+                        <li>количество.</li>
+                    </ul>
+                    <div class="popup__pizza_hz">Напишите их тут. И будет у вас не просто сайт, а интернет-магазин.
+                    </div>
+                    <div class="popup__pizza_price">399 руб.</div>
+                    <button class="popup__pizza_button button card__button">Заказать</button>
             </form>
         </div>
     </div>
