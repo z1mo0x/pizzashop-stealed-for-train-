@@ -4,7 +4,7 @@ const popupClose = document.querySelectorAll('.popup__close');
 const buttons = document.querySelectorAll('.card__button');
 const buttonfeedback = document.querySelectorAll('[data-feedback-form="1"]');
 const popupFeedback = document.querySelector('.popup-feedback');
-const cardImg = document.querySelectorAll('.card__img');
+const cardImg = document.querySelectorAll('.card__img > img');
 const cards = document.querySelectorAll('.card')
 const cardTitle = document.querySelectorAll('.card__title')
 const pizzaPopup = document.querySelector('.popup__pizza');
@@ -12,6 +12,8 @@ const pizzaButton = document.querySelector('.popup__pizza_button');
 const pizzaPopupTitle = document.querySelector('.popup__pizza_title');
 const pizzaPopupSubtitle = document.querySelector('.popup__pizza_subtitle');
 const pizzaPopupPrice = document.querySelector('.popup__pizza_price');
+const pizzaPopupImg = document.querySelector('.popup__pizza_img')
+
 
 buttons.forEach((element) => {
     element.addEventListener('click', (e) => {
@@ -28,20 +30,20 @@ popup.addEventListener('click', (e) => {
 
 popupClose.forEach((element) => {
     element.addEventListener('click', () => {
-        overlay.style.opacity = 0
-        popup.style.transform = 'translate(-50%, -35%) scale(0)'
-        overlay.style.pointerEvents = 'none'
-        pizzaPopup.style.transform = 'translate(-50%, -35%) scale(0)'
-        popupFeedback.style.transform = 'translate(-50%, -35%) scale(0)'
+        overlay.style.opacity = 0;
+        popup.style.transform = 'translate(-50%, -35%) scale(0)';
+        overlay.style.pointerEvents = 'none';
+        pizzaPopup.style.transform = 'translate(-50%, -35%) scale(0)';
+        popupFeedback.style.transform = 'translate(-50%, -35%) scale(0)';
     });
 })
 
 overlay.addEventListener('click', () => {
-    overlay.style.opacity = 0
-    popup.style.transform = 'translate(-50%, -35%) scale(0)'
-    overlay.style.pointerEvents = 'none'
-    pizzaPopup.style.transform = 'translate(-50%, -35%) scale(0)'
-    popupFeedback.style.transform = 'translate(-50%, -35%) scale(0)'
+    overlay.style.opacity = 0;
+    popup.style.transform = 'translate(-50%, -35%) scale(0)';
+    overlay.style.pointerEvents = 'none';
+    pizzaPopup.style.transform = 'translate(-50%, -35%) scale(0)';
+    popupFeedback.style.transform = 'translate(-50%, -35%) scale(0)';
 })
 
 
@@ -65,6 +67,8 @@ cardImg.forEach((element, index) => {
         overlay.style.pointerEvents = 'all';
         pizzaPopup.style.transform = 'translate(-50%, -35%) scale(1)';
         pizzaPopupSubtitle.textContent = cardTitle[index].textContent
+        pizzaPopupImg.setAttribute('src', element.getAttribute('src'))
+        console.log(cardImg[index].getAttribute('src'))
         pizzaPopup.addEventListener('click', (element) => {
             element.stopPropagation();
         })
