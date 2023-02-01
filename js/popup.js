@@ -31,6 +31,8 @@ popupClose.forEach((element) => {
         overlay.style.opacity = 0
         popup.style.transform = 'translate(-50%, -35%) scale(0)'
         overlay.style.pointerEvents = 'none'
+        pizzaPopup.style.transform = 'translate(-50%, -35%) scale(0)'
+        popupFeedback.style.transform = 'translate(-50%, -35%) scale(0)'
     });
 })
 
@@ -38,6 +40,8 @@ overlay.addEventListener('click', () => {
     overlay.style.opacity = 0
     popup.style.transform = 'translate(-50%, -35%) scale(0)'
     overlay.style.pointerEvents = 'none'
+    pizzaPopup.style.transform = 'translate(-50%, -35%) scale(0)'
+    popupFeedback.style.transform = 'translate(-50%, -35%) scale(0)'
 })
 
 
@@ -67,12 +71,6 @@ cardImg.forEach((element, index) => {
     })
 
 });
-
-
-
-
-
-
 
 pizzaButton.addEventListener('click', () => {
     pizzaPopup.style.transform = 'translate(-50%, -35%) scale(0)';
